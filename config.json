@@ -1,0 +1,29 @@
+{
+    "api_data": {
+        "request_url": "https://newapi.zivame.com/api/v1/catalog/list",
+        "post_data" : {"category_ids" : "948",
+                        "limit" : "10000"},
+        "my_headers":{"Content-Type": "application/json"}
+    },
+    "redshift":{
+        "host":"XXX.XXXX.XXX",
+        "user":"XXXX",
+        "password":"XXXXXXXX",
+        "port": 8080,
+        "db":"XXXX"
+    },
+    "s3":{
+        "access_key":"XXXXXXXXX",
+        "secret_key":"XXXXXXXXXX",
+        "region":"XX-XXXXX-1",
+        "path":"XXXXXXXXXXXX/XXX",
+        "table":"XXXXXX",
+        "bucket":"XXXX",
+        "file": "XXXXXX",
+        "copy_column": "XXX",
+        "local_path": "XXXXX"
+    },
+    "csv_file": {
+        "promo_zivame": ""
+    }
+}
