@@ -17,10 +17,10 @@ today = date.today()
 ########################################################################################################################
 main_path = 'D:/OneDrive - adithya/Programming/Python/The Code Base Installer/log'
 is_main_path = os.path.isdir(main_path)
-if is_main_path == True:
+if is_main_path is True:
     path = f'D:/OneDrive - adithya/Programming/Python/The Code Base Installer/log/Log--{today}'
     isFile = os.path.isdir(path)
-    if isFile == True:
+    if isFile is True:
         f = open(f'D:/OneDrive - adithya/Programming/Python/The Code Base Installer/log/Log--{today}/Log--{time_now}--{rand_number}.txt', 'w+')
         f.write(f'{time_now}--Creating Log Folders...!\n')
         f.write(f'{time_now}--Success!!\n')
@@ -52,7 +52,7 @@ git.Git(main_dir).clone("https://gist.github.com/7554ffa2272a586e0dff328166dac07
 print("Cloning GIT Repo...")
 is_file_alv='D:/OneDrive - adithya/Programming/Python/The Code Base Installer/version.txt'
 version_file=os.path.isfile(is_file_alv)
-if version_file==True:
+if version_file is True:
     os.remove('D:/OneDrive - adithya/Programming/Python/The Code Base Installer/version.txt')
     shutil.move(f"C:/Windows/Temp/The Code Base Installer - {rand_number}/7554ffa2272a586e0dff328166dac075/version.txt", "D:\OneDrive - adithya\Programming\Python\The Code Base Installer")
     version_read()
